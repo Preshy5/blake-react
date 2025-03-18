@@ -37,7 +37,7 @@ function Hero() {
 
                 <div className="low-hero-section">
                     <div className="low-left">
-                        <h1><span style={{ color: '#2f327d' }}>Build With</span> Harvoxx</h1>
+                        <h1><span style={{ color: '#2f327d' }}>Build With</span> Blake</h1>
                         <p>
                             We have all the necessary structure and resources to build and deploy quality and innovative
                             products to clients. As a brand we help you bring your ideas to reality by leveraging the power of
