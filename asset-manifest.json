@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/blake-react/static/css/main.70735d8f.css",
-    "main.js": "/blake-react/static/js/main.856d1736.js",
+    "main.css": "/blake-react/static/css/main.76aac993.css",
+    "main.js": "/blake-react/static/js/main.003ff20a.js",
     "static/js/453.8f654999.chunk.js": "/blake-react/static/js/453.8f654999.chunk.js",
     "static/media/bryan-team-background.c067d8be.png": "/blake-react/static/media/bryan-team-background.c067d8be.c067d8bed32bbc8c77e0.png",
     "static/media/header-pic-min.bc4b25f8.png": "/blake-react/static/media/header-pic-min.bc4b25f8.bc4b25f8c22d50aa7628.png",
@@ -9,14 +9,15 @@
     "static/media/fund-min.eb3bc0fb.png": "/blake-react/static/media/fund-min.eb3bc0fb.eb3bc0fb87aa98e90046.png",
     "static/media/ephy-dami.c7f4b16f.png": "/blake-react/static/media/ephy-dami.c7f4b16f.c7f4b16ff3520ce30bef.png",
     "static/media/source-code.ecc52abc.png": "/blake-react/static/media/source-code.ecc52abc.ecc52abc118b8c072c90.png",
-    "static/media/logo.svg": "/blake-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/playstore.svg": "/blake-react/static/media/playstore.29d2a9da66edf44b58b5a955809fd0ec.svg",
+    "static/media/apple.svg": "/blake-react/static/media/apple.29892ad34d6f8ff0bf6be4010646bc65.svg",
     "index.html": "/blake-react/index.html",
-    "main.70735d8f.css.map": "/blake-react/static/css/main.70735d8f.css.map",
-    "main.856d1736.js.map": "/blake-react/static/js/main.856d1736.js.map",
+    "main.76aac993.css.map": "/blake-react/static/css/main.76aac993.css.map",
+    "main.003ff20a.js.map": "/blake-react/static/js/main.003ff20a.js.map",
     "453.8f654999.chunk.js.map": "/blake-react/static/js/453.8f654999.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.70735d8f.css",
-    "static/js/main.856d1736.js"
+    "static/css/main.76aac993.css",
+    "static/js/main.003ff20a.js"
   ]
 }
