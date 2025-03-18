@@ -17,7 +17,6 @@
     position: fixed;
     padding-top: 15px;
     padding-bottom: 20px;
-    /* border: 2px solid red; */
     text-align: center;
     align-items: center;
     transition: 0.2s ease-in;  
@@ -31,7 +30,18 @@
 }
 
 .header-container .left-container {
-    width: 40%;
+    width: 20%;
+    /* border: 2px solid red; */
+    margin-left: 190px;
+}
+
+.left-container .title{
+    display: flex;
+}
+
+.title .logo{
+    background-color: #dca424;
+    padding: 10px 10px;
 }
 
 .left-container p {
@@ -58,12 +68,14 @@
     background-color: #ffffff;
     margin-right: 15px;
     border: 2px solid #f6f6f6;
+    cursor: pointer;
 }
 
 .right-container .build {
     color: #fcf7ec;
     background-color: #dca424;
     border: 2px solid #f6f6f6;
+    cursor: pointer;
 }
 
 .hero-section {
@@ -115,6 +127,7 @@
     color: #f8feff;
     border-radius: 20px;
     border: 2px solid #e2b85b;
+    cursor: pointer;
 }
 
 .hero-section .upper-hero-section .right-hero-section {
@@ -122,11 +135,6 @@
     /* border: 2px solid red; */
     
 }
-
-/* .right-hero-section {
-    border-bottom-right-radius: 50%;
-    border: 2px solid red;
-} */
 
 .right-hero-section img {
     width: 100%;
@@ -167,6 +175,7 @@
     background-color: #ffffff;
     border: 2px solid #edd191;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .low-hero-section .low-right {
@@ -301,6 +310,7 @@
     border: 2px solid #eed497;
     color: #dca440;
     background-color: #ffffff;
+    cursor: pointer;
 }
 
 .lowest-hero-section {
@@ -393,6 +403,7 @@
     border: 2px solid #edd191;
     color: #dda424;
     background-color: #ffffff;
+    cursor: pointer;
 }
 
 .footer{
@@ -433,7 +444,7 @@
     width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     body{
         width: 100%;
     }
@@ -443,6 +454,10 @@
     }
 
     .hero-section{
-        width: 200%;
+        width: 250%;
     }
+
+    /* .header-container .left-container{
+        width: 10%;
+    } */
 }
