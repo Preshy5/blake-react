@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/blake-react/static/css/main.76aac993.css",
-    "main.js": "/blake-react/static/js/main.8bf90f80.js",
+    "main.css": "/blake-react/static/css/main.259939a0.css",
+    "main.js": "/blake-react/static/js/main.d48db042.js",
     "static/js/453.8f654999.chunk.js": "/blake-react/static/js/453.8f654999.chunk.js",
     "static/media/bryan-team-background.c067d8be.png": "/blake-react/static/media/bryan-team-background.c067d8be.c067d8bed32bbc8c77e0.png",
     "static/media/header-pic-min.bc4b25f8.png": "/blake-react/static/media/header-pic-min.bc4b25f8.bc4b25f8c22d50aa7628.png",
@@ -12,12 +12,12 @@
     "static/media/playstore.svg": "/blake-react/static/media/playstore.29d2a9da66edf44b58b5a955809fd0ec.svg",
     "static/media/apple.svg": "/blake-react/static/media/apple.29892ad34d6f8ff0bf6be4010646bc65.svg",
     "index.html": "/blake-react/index.html",
-    "main.76aac993.css.map": "/blake-react/static/css/main.76aac993.css.map",
-    "main.8bf90f80.js.map": "/blake-react/static/js/main.8bf90f80.js.map",
+    "main.259939a0.css.map": "/blake-react/static/css/main.259939a0.css.map",
+    "main.d48db042.js.map": "/blake-react/static/js/main.d48db042.js.map",
     "453.8f654999.chunk.js.map": "/blake-react/static/js/453.8f654999.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76aac993.css",
-    "static/js/main.8bf90f80.js"
+    "static/css/main.259939a0.css",
+    "static/js/main.d48db042.js"
   ]
 }
