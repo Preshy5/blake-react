@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import '../styles/Blake.css';
-import hamburgerMenu from '../assets/images/hamburder-menu.png';
+import { FaBars } from 'react-icons/fa';
 
 function Header() {
   useEffect(() => {
@@ -9,9 +9,7 @@ function Header() {
     const navOverlay = document.getElementById('navOverlay');
     const rightContainer = document.querySelector('.right-container');
 
-    // Ensure elements exist before adding event listeners
     if (container && navToggle && navOverlay && rightContainer) {
-      // Scroll event listener
       const handleScroll = () => {
         const scrollPosition = window.scrollY;
         if (scrollPosition > 20) {
@@ -23,26 +21,22 @@ function Header() {
         }
       };
 
-      // Navigation toggle click event
       const handleNavToggleClick = () => {
         navOverlay.classList.add('show');
         rightContainer.classList.add('show');
-           document['querySelector']('body').style.overflow = 'hidden';
+        document.querySelector('body').style.overflow = 'hidden';
       };
 
-      // Navigation overlay click event
       const handleNavOverlayClick = () => {
         navOverlay.classList.remove('show');
         rightContainer.classList.remove('show');
-        document['querySelector']('body').style.overflow = 'auto';
+        document.querySelector('body').style.overflow = 'auto';
       };
 
-      // Add event listeners
       window.addEventListener('scroll', handleScroll);
       navToggle.addEventListener('click', handleNavToggleClick);
       navOverlay.addEventListener('click', handleNavOverlayClick);
 
-      // Cleanup event listeners on component unmount
       return () => {
         window.removeEventListener('scroll', handleScroll);
         navToggle.removeEventListener('click', handleNavToggleClick);
@@ -71,7 +65,7 @@ function Header() {
         </div>
 
         <div id="navToggle">
-          <img src={hamburgerMenu} alt="Menu" style={{ width: '40px' }} />
+          <FaBars style={{ fontSize: '40px', cursor: 'pointer' }} />
         </div>
       </div>
       <div id="navOverlay"></div>
