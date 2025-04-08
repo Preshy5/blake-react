@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import '../styles/Blake.css';
+import hamburgerMenu from '../assets/images/hamburder-menu.png';
 
 function Header() {
   useEffect(() => {
@@ -26,12 +27,14 @@ function Header() {
       const handleNavToggleClick = () => {
         navOverlay.classList.add('show');
         rightContainer.classList.add('show');
+           document['querySelector']('body').style.overflow = 'hidden';
       };
 
       // Navigation overlay click event
       const handleNavOverlayClick = () => {
         navOverlay.classList.remove('show');
         rightContainer.classList.remove('show');
+        document['querySelector']('body').style.overflow = 'auto';
       };
 
       // Add event listeners
@@ -66,7 +69,10 @@ function Header() {
           <button className="call">Let's Call You</button>
           <button className="build">Let's Build For You</button>
         </div>
-        <div id="navToggle" style={{ fontSize: '40px' }}>&times;</div>
+
+        <div id="navToggle">
+          <img src={hamburgerMenu} alt="Menu" style={{ width: '40px' }} />
+        </div>
       </div>
       <div id="navOverlay"></div>
     </header>

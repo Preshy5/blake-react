@@ -8,22 +8,22 @@ function Footer() {
   return (
     <footer className="footer section-p1">
       <div className="footerDiv">
-        <div className="foot">
-          <div className="footer1">
-            <h3>CONTACT US</h3>
-            <p>
-              Phone: <span style={{ color: 'black' }}>+2349039615666</span>
-            </p>
-            <p>Email: hello@myblake.app</p>
-          </div>
-          <div className="footer1">
-            <h3>ADDRESS</h3>
-            <p>
-              Elzazi complex, Opposite Westharm petrol station along gbalajam/Akpajo road, woji (Odili Road,
-              Port-Harcourt)
-            </p>
-          </div>
+        <div className="footer1">
+          <h3>CONTACT US</h3>
+          <p>
+            Phone: <span style={{ color: 'black' }}>+2349039615666</span>
+          </p>
+          <p>Email: hello@myblake.app</p>
         </div>
+
+        <div className="footer1">
+          <h3>ADDRESS</h3>
+          <p>
+            Elzazi complex, Opposite Westharm petrol station along gbalajam/Akpajo road, woji (Odili Road,
+            Port-Harcourt)
+          </p>
+        </div>
+
         <div className="footer1">
           <h3>DOWNLOAD</h3>
           <div className="footerImg">

@@ -43,6 +43,7 @@
     justify-content: space-between;
     /* border: 2px solid red; */
     align-items: center;
+    padding: 0px 20px 0 20px;
 }
 
 .logoHead {
@@ -217,10 +218,11 @@
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 100px;
+    gap: 30px;
 }
 
 .low-hero-section .low-left {
-    width: 130%;
+    /* width: 130%; */
     padding-top: 20px;
     /* border: 2px solid red; */
 }
@@ -254,28 +256,28 @@
 }
 
 .low-hero-section .low-right .faq1 img {
-    width: 30%;
+    width: 20%;
     background-color: #23bdee;
     border-radius: 50%;
     padding: 20px;
 }
 
 .low-hero-section .low-right .faq2 img {
-    width: 30%;
+    width: 20%;
     background-color: #f3617b;
     border-radius: 50%;
     padding: 20px;
 }
 
 .low-hero-section .low-right .faq3 img {
-    width: 30%;
+    width: 20%;
     background-color: #ff561c;
     border-radius: 50%;
     padding: 20px;
 }
 
 .low-hero-section .low-right .faq4 img {
-    width: 30%;
+    width: 20%;
     background-color: #41b883;
     border-radius: 50%;
     padding: 20px;
@@ -328,7 +330,7 @@
 }
 
 .steps img {
-    width: 30%;
+    width: 20%;
     background-color: #5b72ee;
     border-radius: 50%;
     padding: 20px;
@@ -502,7 +504,8 @@
 
 .footer .footerDiv {
     /* width: 80%; */
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -526,6 +529,7 @@
 .footer1 .footerImg {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     /* border: 2px solid red; */
 }
 
@@ -535,12 +539,58 @@
 
 
 
-
-/* @media screen and (max-width: 992px) {
-    .footerDiv .footer1 {
-        padding: 20px 20px;
+@media screen and (max-width: 900px) {
+    .section-p1 {
+        padding: 10px 10px;
     }
-} */
+
+    .header-container {
+        padding: 15px 10px;
+    }
+
+    .hero-section .upper-hero-section {
+        flex-direction: column;
+    }
+
+    .hero-section .low-hero-section {
+        flex-direction: column;
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lowest-hero-section .source2 {
+        padding: 0;
+    }
+
+    .hero-section .source1 {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .hero-section .source2,
+    .hero-section .source21 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .lowest-hero-section .source21 .right-source,
+    .lowest-hero-section .source2 .right-source,
+    .lowest-hero-section .source1 .left-source {
+        width: 100%;
+    }
+
+    .footer .footerDiv {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 10px;
+    }
+
+    .footerDiv .footer1 {
+        padding: 0;
+        /* border: 2px solid red; */
+    }
+}
 
 @media screen and (max-width: 768px) {
     .section-p1 {
@@ -556,10 +606,6 @@
         height: 40px;
         left: -17px;
         top: -4px;
-    }
-
-    .hero-section .upper-hero-section {
-        flex-direction: column;
     }
 
     .hero-section .up {
@@ -580,10 +626,6 @@
 
     .left-hero-section button {
         padding: 18px 50px;
-    }
-
-    .hero-section .low-hero-section {
-        flex-direction: column;
     }
 
     .low-hero-section .low-left h1 {
@@ -646,11 +688,6 @@
         width: 125%;
     }
 
-    .steps {
-        grid-template-columns: repeat(2, 1fr);
-        width: 125%;
-    }
-
     .steps img {
         width: 22%;
     }
@@ -689,10 +726,6 @@
         padding-bottom: 50px;
     }
 
-    .lowest-hero-section .source1 .right-source img {
-        width: 700px;
-    }
-
     .lowest-hero-section .source1 .left-source h1 {
         margin-bottom: 50px;
         font-size: 40px;
@@ -709,7 +742,7 @@
     }
 
     .lowest-hero-section .source1 .right-source-img .right-source img {
-        width: 780px;
+        width: 650px;
         padding-left: 20px;
     }
 
@@ -719,7 +752,7 @@
     }
 
     .lowest-hero-section .source2 .right-source {
-        width: 120%;
+        width: 100%;
         font-size: 30px;
         padding-bottom: 50px;
     }
@@ -761,7 +794,7 @@
     }
 
     .lowest-hero-section .source21 .left-source1 img {
-        width: 750px;
+        width: 650px;
         padding-left: 10px;
     }
 
@@ -913,7 +946,7 @@
     }
 
     .steps img {
-        left: 15%;
+        left: 10%;
     }
 
     .steps .step .step1 h3 {
@@ -972,7 +1005,7 @@
     }
 
     .lowest-hero-section .source1 .right-source-img .right-source img {
-        width: 780px;
+        width: 500px;
         padding-left: 20px;
     }
 
@@ -982,7 +1015,7 @@
     }
 
     .lowest-hero-section .source2 .right-source {
-        width: 130%;
+        width: 100%;
         font-size: 30px;
         padding-bottom: 50px;
     }
@@ -1001,8 +1034,8 @@
     }
 
     .lowest-hero-section .source2 .left-source img {
-        width: 550px;
-        padding-left: 20px;
+        width: 450px;
+        padding-left: 50px;
     }
 
     .lowest-hero-section .source21 {
@@ -1028,8 +1061,8 @@
     }
 
     .lowest-hero-section .source21 .left-source1 img {
-        width: 700px;
-        padding-left: 40px;
+        width: 500px;
+        padding-left: 50px;
     }
 
     .lowest-hero-section .btn {
@@ -1277,7 +1310,7 @@
     }
 
     .lowest-hero-section .source2 .right-source {
-        width: 135%;
+        width: 100%;
         font-size: 30px;
         padding-bottom: 50px;
     }
@@ -1336,6 +1369,10 @@
         font-size: 30px;
         border: 1px solid #f3c44e;
         margin-top: 50px;
+    }
+
+    .footerDiv {
+        flex-direction: column;
     }
 
     .footer {
