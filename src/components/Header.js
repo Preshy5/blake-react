@@ -1,38 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Blake.css';
 
 function Header() {
+  useEffect(() => {
+    const navToggle = document.getElementById('navToggle');
+    const navOverlay = document.getElementById('navOverlay');
+    const rightContainer = document.querySelector('.right-container');
 
-  const container = document.querySelector('.header-container');
+    if (navToggle && navOverlay && rightContainer) {
+      navToggle.addEventListener('click', () => {
+        navOverlay.classList.add('show');
+        rightContainer.classList.add('show');
+      });
 
-  window.addEventListener('scroll', () => {
-    const scrollPosition = window.scrollY;
-    if (scrollPosition > 20) {
-      container.style.backgroundColor = '#ffffff';
-      container.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
-    } else {
-      container.style.backgroundColor = '#fff3e4';
-      container.style.boxShadow = 'none';
+      navOverlay.addEventListener('click', () => {
+        navOverlay.classList.remove('show');
+        rightContainer.classList.remove('show');
+      });
     }
-  })
 
-  const navToggle = document.getElementById('navToggle')
-  const navOverlay = document.getElementById('navOverlay')
-  const rightContainer = document.querySelector('.right-container')
+    // Cleanup event listeners when the component unmounts
+    return () => {
+      if (navToggle && navOverlay) {
+        navToggle.removeEventListener('click', () => {});
+        navOverlay.removeEventListener('click', () => {});
+      }
+    };
+  }, []);
 
-  navToggle.addEventListener('click', () => {
-    if (navToggle) {
-      navOverlay.classList.add('show')
-      rightContainer.classList.add('show')
-    }
-  })
-
-  navOverlay.addEventListener('click', () => {
-    if (navOverlay) {
-      navOverlay.classList.remove('show')
-      rightContainer.classList.remove('show')
-    }
-  })
   return (
     <div>
       <header className="header-container">
