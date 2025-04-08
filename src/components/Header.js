@@ -8,47 +8,44 @@ function Header() {
     const navOverlay = document.getElementById('navOverlay');
     const rightContainer = document.querySelector('.right-container');
 
-    // Scroll event listener
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      if (scrollPosition > 20) {
-        container.style.backgroundColor = '#ffffff';
-        container.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
-      } else {
-        container.style.backgroundColor = '#fff3e4';
-        container.style.boxShadow = 'none';
-      }
-    };
+    // Ensure elements exist before adding event listeners
+    if (container && navToggle && navOverlay && rightContainer) {
+      // Scroll event listener
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 20) {
+          container.style.backgroundColor = '#ffffff';
+          container.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
+        } else {
+          container.style.backgroundColor = '#fff3e4';
+          container.style.boxShadow = 'none';
+        }
+      };
 
-    // Add scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Navigation toggle click event
-    const handleNavToggleClick = () => {
-      if (navToggle) {
+      // Navigation toggle click event
+      const handleNavToggleClick = () => {
         navOverlay.classList.add('show');
         rightContainer.classList.add('show');
-      }
-    };
+      };
 
-    // Navigation overlay click event
-    const handleNavOverlayClick = () => {
-      if (navOverlay) {
+      // Navigation overlay click event
+      const handleNavOverlayClick = () => {
         navOverlay.classList.remove('show');
         rightContainer.classList.remove('show');
-      }
-    };
+      };
 
-    // Add click event listeners
-    navToggle?.addEventListener('click', handleNavToggleClick);
-    navOverlay?.addEventListener('click', handleNavOverlayClick);
+      // Add event listeners
+      window.addEventListener('scroll', handleScroll);
+      navToggle.addEventListener('click', handleNavToggleClick);
+      navOverlay.addEventListener('click', handleNavOverlayClick);
 
-    // Cleanup event listeners on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      navToggle?.removeEventListener('click', handleNavToggleClick);
-      navOverlay?.removeEventListener('click', handleNavOverlayClick);
-    };
+      // Cleanup event listeners on component unmount
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+        navToggle.removeEventListener('click', handleNavToggleClick);
+        navOverlay.removeEventListener('click', handleNavOverlayClick);
+      };
+    }
   }, []);
 
   return (
